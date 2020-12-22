@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="image/Favicon.png">
+</head>
+<body>
+    <h2><u>JavaScript</u></h2>
+	<p id="First"></p>
+	<script >
+	document.getElementById("First").innerHTML = "First JavaScript" 
+	</script>
+	<!---button-->
+	<h2 ><u>Button</u></h2>
+	<p id="demo">Javascript can change HTML content</p>
+    <button type="button" onclick='getElementById("demo").innerHTML="Hello Javascript"'>Click me!</button>
+    <!---fontsize--->
+    <h2><u>Font size change</u></h2>
+	<p id="fontSize">JavaScript can change the style of an HTML element.</p>
+	<button type="button" onclick="document.getElementById('fontSize').style.fontSize='50px'">Click Me!</button>
+	<!---bulb on/off--->
+    <h2><u>Turn on the light</u></h2>
+    <p>JavaScript can change HTML attribute values.</p> 
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+	<button onclick="document.getElementById('myImage').src='image/pic_bulbon.gif'">Turn on the light</button>
+	<img id="myImage" src="image/pic_bulboff.gif" style="width:100px">
+	<button onclick="document.getElementById('myImage').src='image/pic_bulboff.gif'">Turn off the light</button>	
+	<!---display none--->
+	<h2><u>Display none</u></h2>
+	<p id="display">JavaScript can hide HTML elements.</p>
+	<button type="button" onclick="document.getElementById('display').style.display='none'">Click Me!</button>
+	<!---add--->
+	<h2><u>Adding(output)</u></h2>
+	<p id="adding"></p>
+	<script>
+	document.getElementById("adding").innerHTML = 5 + 6+10+13+17+22;
+	</script>
+	<!---alart window--->
+	<h2><u>Alart(output)</u></h2>
+	<script>
+	alert(9 + 6);
+	</script>
+  	<!---print--->
+ 	<h2><u>Print the current page.(output)</u></h2>
+  	<h2>The window.print() Method</h2>
+	<p>Click the button to print the current page.</p>
+	<button onclick="window.print()">Print this page</button>
+	<!---statement--->
+    <h2 ><u>JavaScript Statements</u></h2>
+	<p>JavaScript code blocks are written between { and }</p>
+	<button type="button" onclick="myFunction()">Click Me!</button>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<script>
+	function myFunction() {
+	  document.getElementById("demo1").innerHTML = "Hello Alexa!";
+	  document.getElementById("demo2").innerHTML = "How are you?";
+	}	
+	</script>
+   	<!---js comments-->
+   	<h2><u>JavaScript Comments</u></h2>
+   	<h1 id="myH"></h1>
+	<p id="myP"></p>
+	<script>
+	/*
+	The code below will change
+	the heading with id = "myH"
+	and the paragraph with id = "myP"
+	*/
+	document.getElementById("myH").innerHTML = "JavaScript Comments";
+	document.getElementById("myP").innerHTML = "My first paragraph.";
+	</script>
+	<!---operator--->
+	<h2><u>Operator(*)</u></h2>
+	<h2>The * Operator</h2>
+	<p id="operator"></p>
+	<script>
+	var x = 5;
+	var y = 2;
+	var z = x * y;
+	document.getElementById("operator").innerHTML = z;
+	</script>
+	<!--ADD STRING &NUMBER-->
+	<h2><u>String+Number</u></h2>
+	<h2>JavaScript Operators</h2>
+	<p>Adding a number and a string, returns a string.</p>
+	<p id="String+Number"></p>
+	<script>
+	var x = 5 + 5;
+	var y = "5" + 5;
+	var z = "Hello" + 5;
+	document.getElementById("String+Number").innerHTML =
+	x + "<br>" + y + "<br>" + z;
+	</script>
+	<!---data type(array)-->
+	<h2><u>Data Type(array)</u></h2>
+	<h2>JavaScript Arrays</h2>
+	<p>Array indexes are zero-based, which means the first item is [0].</p>
+	<p id="Array"></p>
+	<script>
+	var cars = ["Saab","Volvo","BMW"];
+	document.getElementById("Array").innerHTML = cars[0];
+	</script>
+</body>
+</html>
